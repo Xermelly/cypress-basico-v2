@@ -126,6 +126,6 @@ describe("Central de Atendimento ao Cliente TAT", () => {
   });
   it("acessa a página da política de privacidade removendo o target e então clicando no link", () => {
     cy.get('a[href="privacy.html"]').invoke("removeAttr", "target").click();
-    cy.contains("CAC TAT - Política d privacidade").should("be.visible");
+    cy.contains("CAC TAT - Política de privacidade").should("be.visible");
   });
 });
